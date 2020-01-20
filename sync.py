@@ -1,5 +1,5 @@
 # Parallelizing with Pool.apply()
-#Problem Statement: Count how many numbers exist between a given range in each row
+
 import numpy as np
 import multiprocessing as mp
 
