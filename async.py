@@ -45,8 +45,6 @@ if __name__ == '__main__':
     data = arr.tolist()
     sample = data[:5]
     print(data[:5])
-
-
     pool = mp.Pool(mp.cpu_count())
     run(pool,sample)
     pool.close()
