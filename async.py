@@ -24,19 +24,7 @@ def run (pool,arr):
     for i, row in enumerate(arr):
         pool.apply_async(load, args=(i, row, 4, 8), callback=call_back)
 
-# # Step 5: Sort results [OPTIONAL]
-# results.sort(key=lambda x: x[0])
-# results_final = [r for i, r in results]
-import multiprocessing
-import time
 
-def calc_square(numbers, q):
-    for n in numbers:
-        q.put(n*n)
-        time.sleep(0.2)
-
-    q.put(-1)
-    print('Exiting function')
 
 if __name__ == '__main__':
     # Prepare data
